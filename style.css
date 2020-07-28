@@ -42,7 +42,7 @@ body, html{
   }
 
   /* for large tablets */
-  @media screen and (max-width: 991px){
+  /* @media screen and (max-width: 991px){
     .banner{
 
     }
@@ -55,10 +55,10 @@ body, html{
     #banner-content i{
 
     }
-  }
+  } */
 
   /* for medium tablets */
-  @media screen and (max-width: 767px){
+  /* @media screen and (max-width: 767px){
     .banner{
 
     }
@@ -71,7 +71,7 @@ body, html{
     #banner-content i{
       
     }
-  }
+  } */
   /* for mobile */
   @media screen and (max-width: 479px){
     .banner{
