@@ -1,17 +1,12 @@
-body, html{
+*{
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  margin:0;
-  padding:0; 
+  over
 }
-
-/* banner */
 .banner{
   height: 100vh;
-  width: 100%;
+  /* max-width: 100%; */
   background-image: url(marble.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -41,59 +36,11 @@ body, html{
     font-size: 5rem;
   }
 
-  /* for large tablets */
-  /* @media screen and (max-width: 991px){
-    .banner{
-
-    }
-    #banner-content{
-
-    }
-    #banner-content div{
-
-    }
-    #banner-content i{
-
-    }
-  } */
-
-  /* for medium tablets */
-  /* @media screen and (max-width: 767px){
-    .banner{
-
-    }
-    #banner-content{
-
-    }
-    #banner-content div{
-
-    }
-    #banner-content i{
-      
-    }
-  } */
-  /* for mobile */
-  @media screen and (max-width: 479px){
-    .banner{
-      height: 25vh;
-      background-size: cover;
-    }
-    #banner-content{
-
-    }
-    #banner-content div{
-
-    }
-    #banner-content i{
-      
-    }
-  }
-
 /* Things I've Done */
 #subsection{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -105,11 +52,18 @@ body, html{
   width: 25rem;
   padding-right: 2rem;
 }
+.p-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 100%;
+}
+
 #subsection p{
   margin-bottom: 0.5%;
   margin-top: 0.5%;
   padding-left: 1rem;
-  width: 75%;
+  width: 100%;
   height: auto;
   font-size: 2rem;
 }
@@ -221,4 +175,172 @@ body, html{
   font-size: 3.5rem;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 550;
+}
+
+/* for tablets */
+  @media screen and (max-width: 991px){
+    /* Banner */
+    .banner{
+      height: 30vh;
+    }
+    #banner-content{
+      top: 10%;
+    }
+    #banner-content div{
+      font-size: 3.5rem;
+    }
+    #banner-content i{
+      font-size: 2.5rem;
+    }
+        
+    /* Things I've Done */
+    #subsection{
+      width: 95%;
+    }
+    #subsection img{
+      height: auto;
+      width: 30%;
+    }
+
+    #subsection p{
+      padding-left: .5rem;
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    /* Contact */
+    #connect{
+      line-height: 2.5rem;
+      font-size: 20px;
+      margin-top: 3rem;
+    }
+    #connect p{
+      text-align: center;
+      font-size: 2.25rem;
+    }
+
+    #connect span{
+      display: none;
+    }
+    .larger{
+      font-size: 3rem;
+      font-weight: 550;
+    }
+
+    .label{
+      font-weight: 550;
+      font-size: 3rem;
+    }
+  } 
+
+  /* for mobile */
+@media screen and (max-width: 479px){
+  /* Banner */
+  .banner{
+    height: 25vh;
+  }
+  #banner-content{
+    top: 10%;
+    width: 100%;
+  }
+  #banner-content div{
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  #banner-content i{
+    font-size: 1rem;
+  }
+  /* Some Things I've Done */
+  #subsection{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  #subsection img{
+    height: 6rem;
+    width: 10rem;
+    padding: 0.25rem 0rem;
+  }
+  .p-wrapper{
+    align-items: center;
+  }
+  #subsection p{
+    margin-bottom: 0.5%;
+    margin-top: 5%;
+    padding-left: 0rem;
+    width: 80%;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  /* generalized classes */
+  .section{
+    min-height: 10%;
+    width:100%;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .label{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 550;
+  }
+  /* Words I live By */
+  #quotes{
+    padding-bottom: 1rem;
+  }
+  #quotes p{
+    width: 90%;
+    margin: 1.25rem auto 2rem auto;
+    font-size: .75rem;
+  }
+
+    /* Tools in my Tool Box */
+  .row{
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+  }
+  .list-element{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+  }
+
+  /* Contact */
+  #connect{
+    line-height: 1rem;
+    font-weight: 550;
+    font-size: 1rem;
+    color: rgb(70, 78, 87);
+    margin-top: 1.5rem;
+  }
+  #connect p{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .larger{
+    font-size: 1rem;
+  }
+  .larger span{
+    display: none;
+  }
+  #logos{
+    height: 30%;
+    margin-bottom: 3vh;
+  }
+  #logos a{
+    font-size: 10px;
+  }
+  .icon{
+    margin: 0.75rem;
+  }
 }
