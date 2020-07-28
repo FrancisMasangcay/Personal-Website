@@ -202,7 +202,6 @@
       height: auto;
       width: 30%;
     }
-
     #subsection p{
       padding-left: .5rem;
       padding-bottom: 1rem;
@@ -219,7 +218,6 @@
       text-align: center;
       font-size: 2.25rem;
     }
-
     #connect span{
       display: none;
     }
@@ -227,10 +225,13 @@
       font-size: 3rem;
       font-weight: 550;
     }
-
     .label{
       font-weight: 550;
       font-size: 3rem;
+    }  
+    .icon:hover{  
+      transform: scale(1);
+      color: black;
     }
   } 
 
@@ -342,5 +343,9 @@
   }
   .icon{
     margin: 0.75rem;
+  }
+  .icon:hover{
+    transform: scale(1);
+    color: black;
   }
 }
