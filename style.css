@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  over
 }
+
 .banner{
   height: 100vh;
   /* max-width: 100%; */
-  background-image: url(marble.jpg);
+  background-image: url(profile-web.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,8 +21,9 @@
     justify-content: space-between;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 45%;
     width: 100%;
+    color: white;
   }
   #banner-content div{
     flex: 1;
@@ -183,9 +184,10 @@
     /* Banner */
     .banner{
       height: 30vh;
+      background-position: 50% -300px;
     }
     #banner-content{
-      top: 10%;
+      top: 12%;
     }
     #banner-content div{
       font-size: 3.5rem;
@@ -239,11 +241,13 @@
 @media screen and (max-width: 479px){
   /* Banner */
   .banner{
-    height: 25vh;
+    height: 30vh;
+    background-position: 50% -200px;
   }
   #banner-content{
-    top: 10%;
+    top: 15%;
     width: 100%;
+    /* border: solid pink 2px; */
   }
   #banner-content div{
     font-size: 1.75rem;
