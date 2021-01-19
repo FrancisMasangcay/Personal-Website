@@ -4,6 +4,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  background: url(background.JPG) no-repeat center center fixed;
+  background-size: cover;
+  /* color: rgba(235, 235, 235, 0.966); */
+}
+
 .banner{
   height: 100vh;
   /* max-width: 100%; */
@@ -40,56 +46,59 @@
 /* Things I've Done */
 .title{
   display: flex;
+  flex-direction: row;
   font-size: 4.85rem;
+  width: 100%;
+  height: auto;
 }
 #subsection{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 2rem;
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
 }
-#subsection img{
+#subsection .title img{
   height: 30%;
   width: 30%;
   padding-right: 2rem;
-  /* border: red solid 2px; */
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
+.title p{
+  margin: auto;
+}
+
 .p-wrapper{
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  /* padding-left: 1.75rem; */
   width: 100%;
   margin-bottom: 0.5%;
   margin-top: 0.5%;
   height: auto;
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 #subsection .container{
   margin-top: 3%;
   margin-bottom: 2%;
+  width: 100%;
 }
 
 /* Words I live By */
-#radialBack{
-  height: fit-content;
-  width: 100%;
-  background-color: #6699CC;
-  background: radial-gradient(circle,#b4af5f -30%, #0066b2 40%, #001c31 100%);
-  background-size: cover;
-  color: white;
-}
+
 #quotes p{
   flex:1;
   text-align: center;
   width: 50%;
   margin: 1.25rem auto 2rem auto;
-  font-size: 1.75rem;
+  font-size: 2.23rem;
 }
 #quotes{
   padding-bottom: 6rem;
@@ -103,7 +112,7 @@
  .row{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: auto;
     align-self: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -115,6 +124,7 @@
   }
   .list-element{
     width: 95%;
+    padding: 0 1rem 0 1rem;
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
@@ -125,8 +135,12 @@
     line-height: 4rem;
     font-weight: 550;
     font-size: 20px;
-    color: rgb(70, 78, 87);
-    margin-top: 8rem;
+    color: rgb(5, 5, 5);
+    padding: 0rem 2rem 2rem 2rem;
+    background-color: rgba(240, 248, 255, 0.404);
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #connect p{
     text-align: center;
@@ -154,12 +168,12 @@
   }
   .icon:hover{
     transform: scale(1.45);
-    color: deepskyblue;
+    color: rgba(0, 191, 255, 0.932);
   }
 
   /* font awesome */
   .fa{
-    color: black;
+    color: white;
   }
   .fa-envelope{
     top:-5%;
@@ -171,8 +185,12 @@
 /* generalized classes */
 .section{
   min-height: 60%;
-  width:100%;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  padding: 2rem;
+  background-color: rgba(240, 248, 255, 0.404);
 }
 .flex-column{
   flex-direction: column;
@@ -183,10 +201,18 @@
 .label{
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  padding: 2rem;
+  /* margin-top: 2.5rem;
+  margin-bottom: 1.5rem; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8rem 2rem 0rem 2rem;
   font-weight: 550;
+  width: 70%;
+  background-color: rgba(240, 248, 255, 0.404);
+}
+
+#spacing{
+  height: 8vh;
 }
 
 /* for tablets */
@@ -209,32 +235,35 @@
     /* Things I've Done */
     .title{
       display: flex;
-      font-size: 4.85rem; /*TODO change*/
+      font-size: 3rem; 
     }
     #subsection{
       width: 95%;
-      border: solid 2px blue;/*TODO change*/
     }
     #subsection img{
-      height: auto; /*TODO change*/
-      width: 30%;/*TODO change*/
-      border: solid 2px red;/*TODO change*/
+      height: auto; 
+      width: 30%;
     }
-    #subsection p{
-      padding-left: .5rem;
-      padding-bottom: 1rem;
+
+    /* Tools in my Tool Box */
+    .row{
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+      width: auto;
+    }
+    .list-element{
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 .5rem 0 .5rem;
       font-size: 1.5rem;
-    }
-    #subsection .container{
-      margin-top: 3%;/*TODO change*/
-      margin-bottom: 2%;/*TODO change*/
     }
 
     /* Contact */
     #connect{
       line-height: 2.5rem;
       font-size: 20px;
-      margin-top: 3rem;
+      padding-top: 3rem;
     }
     #connect p{
       text-align: center;
@@ -249,11 +278,11 @@
     }
     .label{
       font-weight: 550;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }  
     .icon:hover{  
       transform: scale(1);
-      color: black;
+      color: rgba(0, 191, 255, 0.932);
     }
   } 
 
@@ -267,7 +296,6 @@
   #banner-content{
     top: 15%;
     width: 100%;
-    /* border: solid pink 2px; */
   }
   #banner-content div{
     font-size: 1.75rem;
@@ -280,7 +308,7 @@
   /* Some Things I've Done */
   .title{
     display: flex;
-    font-size: 4.85rem; /*TODO change*/
+    font-size: 2.75rem; /*TODO change*/
   }
   #subsection{
     flex-direction: column;
