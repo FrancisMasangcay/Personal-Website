@@ -308,7 +308,7 @@ html{
   /* Some Things I've Done */
   .title{
     display: flex;
-    font-size: 2.75rem; /*TODO change*/
+    font-size: 2.75rem;
   }
   #subsection{
     flex-direction: column;
@@ -319,8 +319,8 @@ html{
     width: 85%;
   }
   #subsection img{
-    height: 6rem;/*TODO change*/
-    width: 10rem;/*TODO change*/
+    height: 6rem;
+    width: 10rem;
     padding: 0.25rem 0rem;
   }
   .p-wrapper{
@@ -333,10 +333,6 @@ html{
     width: 80%;
     height: auto;
     font-size: 1rem;
-  }
-  #subsection .container{
-    margin-top: 3%;/*TODO change*/
-    margin-bottom: 2%;/*TODO change*/
   }
 
   /* generalized classes */
