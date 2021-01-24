@@ -5,7 +5,7 @@
 }
 
 html{
-  background: url(background.JPG) no-repeat center center fixed;
+  background: url(./assets/background.JPG) no-repeat center center fixed;
   background-size: cover;
   /* color: rgba(235, 235, 235, 0.966); */
 }
@@ -13,7 +13,7 @@ html{
 .banner{
   height: 100vh;
   /* max-width: 100%; */
-  background-image: url(profile-web.jpg);
+  background-image: url(./assets/profile-web.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
