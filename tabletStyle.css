@@ -1,0 +1,70 @@
+/* for tablets */
+@media screen and (max-width: 991px){
+  /* Banner */
+  .banner{
+    height: 30vh;
+    background-position: 50% -300px;
+  }
+  #banner-content{
+    top: 12%;
+  }
+  #banner-content div{
+    font-size: 3.5rem;
+  }
+  #banner-content i{
+    font-size: 2.5rem;
+  }
+      
+  /* Things I've Done */
+  .title{
+    display: flex;
+    font-size: 3rem; 
+  }
+  #subsection{
+    width: 95%;
+  }
+  #subsection img{
+    height: auto; 
+    width: 30%;
+  }
+
+  /* Tools in my Tool Box */
+  .row{
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    width: auto;
+  }
+  .list-element{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 .5rem 0 .5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Contact */
+  #connect{
+    line-height: 2.5rem;
+    font-size: 20px;
+    padding-top: 3rem;
+  }
+  #connect p{
+    text-align: center;
+    font-size: 2.25rem;
+  }
+  #connect span{
+    display: none;
+  }
+  .larger{
+    font-size: 3rem;
+    font-weight: 550;
+  }
+  .label{
+    font-weight: 550;
+    font-size: 2.5rem;
+  }  
+  .icon:hover{  
+    transform: scale(1);
+    color: rgba(0, 191, 255, 0.932);
+  }
+} 

@@ -1,4 +1,5 @@
-First project in HTML and CSS for a personal webpage.
+# Personal Website
+My first project in HTML and CSS for a personal webpage.
 
 The goal was to use this opportunity to introduce myself 
 to web development while also creating a neat way to showcase 

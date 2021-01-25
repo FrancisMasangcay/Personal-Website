@@ -1,0 +1,119 @@
+  /* for mobile */
+  @media screen and (max-width: 479px){
+    /* Banner */
+    .banner{
+      height: 30vh;
+      background-position: 50% -200px;
+    }
+    #banner-content{
+      top: 15%;
+      width: 100%;
+    }
+    #banner-content div{
+      font-size: 1.75rem;
+      text-align: center;
+      font-weight: 800;
+    }
+    #banner-content i{
+      font-size: 1rem;
+    }
+    /* Some Things I've Done */
+    .title{
+      display: flex;
+      font-size: 2.75rem;
+    }
+    #subsection{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: .5rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
+    }
+    #subsection img{
+      height: 6rem;
+      width: 10rem;
+      padding: 0.25rem 0rem;
+    }
+    .p-wrapper{
+      align-items: center;
+    }
+    #subsection p{
+      margin-bottom: 0.5%;
+      margin-top: 5%;
+      padding-left: 0rem;
+      width: 80%;
+      height: auto;
+      font-size: 1rem;
+    }
+  
+    /* generalized classes */
+    .section{
+      min-height: 10%;
+      width:100%;
+    }
+    .flex-column{
+      flex-direction: column;
+    }
+    .label{
+      text-align: center;
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 550;
+    }
+    /* Words I live By */
+    #quotes{
+      padding-bottom: 1rem;
+    }
+    #quotes p{
+      width: 90%;
+      margin: 1.25rem auto 2rem auto;
+      font-size: .75rem;
+    }
+  
+      /* Tools in my Tool Box */
+    .row{
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+    }
+    .list-element{
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+    }
+  
+    /* Contact */
+    #connect{
+      line-height: 1rem;
+      font-weight: 550;
+      font-size: 1rem;
+      color: rgb(70, 78, 87);
+      margin-top: 1.5rem;
+    }
+    #connect p{
+      text-align: center;
+      font-size: 1rem;
+    }
+    .larger{
+      font-size: 1rem;
+    }
+    .larger span{
+      display: none;
+    }
+    #logos{
+      height: 30%;
+      margin-bottom: 3vh;
+    }
+    #logos a{
+      font-size: 10px;
+    }
+    .icon{
+      margin: 0.75rem;
+    }
+    .icon:hover{
+      transform: scale(1);
+      color: black;
+    }
+  }
