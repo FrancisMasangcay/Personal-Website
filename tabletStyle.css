@@ -17,12 +17,11 @@
   #banner-content i{
     width: 20%;
     font-size: 2.5rem;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
       
   /* Things I've Done */
   .title{
-    display: flex;
     font-size: 3rem; 
   }
   #subsection{
@@ -98,15 +97,15 @@
       
   /* Things I've Done */
   .title{
-    display: flex;
     font-size: 3rem; 
+    margin-bottom: 2rem;
   }
   #subsection{
     width: 95%;
   }
   #subsection .title img{
     max-height: 80%;
-    width: 30%;
+    width: 100%;
   }
 
   .grid-tools .card{
@@ -121,6 +120,7 @@
   .long{
     grid-template-rows: 2fr 1fr;
   }
+  
   /* Contact */
   #connect{
     line-height: 2.5rem;

@@ -1,43 +1,66 @@
-  /* for mobile */
+/* for mobile */
+/* portriat */
   @media screen and (max-width: 479px){
     /* Banner */
     .banner{
-      height: 30vh;
+      height: 60vh;
       background-position: 50% -200px;
     }
     #banner-content{
-      top: 15%;
+      top: 35%;
       width: 100%;
     }
     #banner-content div{
       font-size: 1.75rem;
       text-align: center;
       font-weight: 800;
+      width: 90%;
     }
     #banner-content i{
       font-size: 1rem;
+      border-radius: 8px 8px 0 0;
     }
     /* Some Things I've Done */
     .title{
-      display: flex;
-      font-size: 2.75rem;
+      font-size: 1.2rem;
+      width: 80%;
+      margin: 0 auto 1rem auto;
+      grid-column-gap: .5rem;
+    }
+    .tag{
+      font-size: .75rem;
+      column-gap: 0;
+    }
+    .short{
+      width: 60%;
+      grid-template-columns: 1fr 2fr;
+      margin-right: auto;
+      margin-left: auto;
     }
     #subsection{
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: .5rem;
+      margin-bottom: 0rem;
       margin-left: auto;
       margin-right: auto;
+      padding-bottom: 0;
       width: 85%;
-    }
-    #subsection img{
-      height: 6rem;
-      width: 10rem;
-      padding: 0.25rem 0rem;
     }
     .p-wrapper{
       align-items: center;
     }
+    .grid{
+      row-gap: 1rem;
+      padding-top: 1rem;
+    }
+    .grid-tools{
+      padding-top: .25rem;
+    }
+    .card img{
+      height: 40%;
+    }
+    .text{
+      font-size: 1.15rem;
+    }
+    
     #subsection p{
       margin-bottom: 0.5%;
       margin-top: 5%;
@@ -47,54 +70,29 @@
       font-size: 1rem;
     }
   
-    /* generalized classes */
-    .section{
-      min-height: 10%;
-      width:100%;
-    }
-    .flex-column{
-      flex-direction: column;
-    }
-    .label{
-      text-align: center;
-      font-size: 1.25rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: 550;
-    }
     /* Words I live By */
     #quotes{
-      padding-bottom: 1rem;
+      padding-bottom: 0rem;
     }
     #quotes p{
       width: 90%;
       margin: 1.25rem auto 2rem auto;
-      font-size: .75rem;
-    }
-  
-      /* Tools in my Tool Box */
-    .row{
-      margin-top: .1rem;
-      margin-bottom: .1rem;
-    }
-    .list-element{
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
       font-size: 1rem;
     }
-  
+      
     /* Contact */
     #connect{
       line-height: 1rem;
       font-weight: 550;
       font-size: 1rem;
-      color: rgb(70, 78, 87);
-      margin-top: 1.5rem;
+      color: black;
+      margin-top: 0rem;
+      padding-top: 0;
     }
     #connect p{
       text-align: center;
       font-size: 1rem;
+      margin-bottom: .5rem;
     }
     .larger{
       font-size: 1rem;
@@ -115,5 +113,162 @@
     .icon:hover{
       transform: scale(1);
       color: black;
+    }
+    
+    /* generalized classes */
+    .section{
+      min-height: 10%;
+      width:100%;
+      padding-bottom: 0;
+    }
+    .label{
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 0rem;
+      margin-top: 0;
+      font-weight: 550;
+      padding: 2rem 0 0 0;
+      margin-bottom: 0;
+    }
+    #opaque-bg{
+      margin-top: 5vh;
+    }
+  }
+
+
+/* landscape */
+  @media screen and (max-width: 680px){
+    /* Banner */
+    .banner{
+      height: 75vh;
+      background-position: 50% -200px;
+    }
+    #banner-content{
+      top: 45%;
+      width: 100%;
+    }
+    #banner-content div{
+      font-size: 1.75rem;
+      text-align: center;
+      font-weight: 800;
+      width: 90%;
+    }
+    #banner-content i{
+      font-size: 1rem;
+      border-radius: 5px 5px 0 0;
+    }
+    /* Some Things I've Done */
+    .title{
+      font-size: 1.2rem;
+      width: 50%;
+      margin: 0 auto 1rem auto;
+      grid-column-gap: 0rem;
+      grid-template-columns: 1fr 2fr;
+    }
+    #subsection .title img{
+      width: 85%;
+    }
+    .tag{
+      font-size: .75rem;
+      column-gap: 0;
+    }
+    .short{
+      width: 30%;
+      grid-template-columns: 1fr 2fr;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    #subsection{
+      margin-bottom: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 0;
+      width: 85%;
+    }
+    .p-wrapper{
+      align-items: center;
+    }
+    .grid{
+      row-gap: 1rem;
+      padding-top: 1rem;
+    }
+    .grid-tools{
+      padding-top: .25rem;
+    }
+    .card img{
+      height: 40%;
+    }
+    .text{
+      font-size: 1.15rem;
+    }
+    
+    #subsection p{
+      margin-bottom: 0.5%;
+      margin-top: 0;
+      padding-left: 0rem;
+      width: 80%;
+      height: auto;
+      font-size: 1rem;
+    }
+  
+    /* Words I live By */
+    #quotes p{
+      width: 90%;
+      margin: 1.25rem auto 2rem auto;
+      font-size: 1.3rem;
+    }
+      
+    /* Contact */
+    #connect{
+      line-height: 1rem;
+      font-weight: 550;
+      font-size: 1rem;
+      color: black;
+      margin-top: 0rem;
+      padding-top: 0;
+    }
+    #connect p{
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
+    .larger{
+      font-size: 1rem;
+    }
+    .larger span{
+      display: none;
+    }
+    #logos{
+      height: 30%;
+      margin-bottom: 3vh;
+    }
+    #logos a{
+      font-size: 10px;
+    }
+    .icon{
+      margin: 0.75rem;
+    }
+    .icon:hover{
+      transform: scale(1);
+      color: black;
+    }
+    
+    /* generalized classes */
+    .section{
+      min-height: 10%;
+      width:100%;
+      padding-bottom: 0;
+    }
+    .label{
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 0rem;
+      margin-top: 0;
+      font-weight: 550;
+      padding: 2rem 0 0 0;
+      margin-bottom: 0;
+    }
+    #opaque-bg{
+      margin-top: 5vh;
     }
   }
