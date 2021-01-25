@@ -7,7 +7,6 @@
 html{
   background: url(./assets/background.JPG) no-repeat center center fixed;
   background-size: cover;
-  /* color: rgba(235, 235, 235, 0.966); */
 }
 
 .banner{
@@ -45,17 +44,22 @@ html{
 
 /* Things I've Done */
 .title{
-  display: flex;
-  flex-direction: row;
-  font-size: 4.85rem;
+  display: grid;
+  font-size: 2.85rem;
+  grid-template-columns: 1fr 4fr;
   width: 100%;
-  height: auto;
+  grid-column-gap: 2rem;
+  height:fit-content;
+  /* border: solid 2px yellowgreen; */
+}
+.info-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 #subsection{
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: center; */
   margin-bottom: 1.5rem;
   padding: 1rem;
   margin-left: auto;
@@ -63,21 +67,34 @@ html{
   width: 70%;
 }
 #subsection .title img{
-  height: 30%;
-  width: 30%;
-  padding-right: 2rem;
+  height: 100%;
+  width: 100%;
+  justify-items: end;
   margin-top: auto;
   margin-bottom: auto;
+  object-fit: cover;
 }
-
-.title p{
-  margin: auto;
+.title a{
+  justify-self: start;
+}
+.tags{
+  display: inline;
+  width: 100%;
+}
+.tag{
+  background-color: #4f5956;
+  color: rgba(240, 248, 255, 0.804);
+  border-radius: 8%;
+  width:fit-content;
+  float: left;
+  margin: .5rem .5rem 0 .5rem;
+  padding: 0 .25rem;
+  font-size: 1.5rem;
 }
 
 .p-wrapper{
   display: flex;
   flex-direction: column;
-  /* padding-left: 1.75rem; */
   width: 100%;
   margin-bottom: 0.5%;
   margin-top: 0.5%;
@@ -219,8 +236,6 @@ a:hover {
 .label{
   text-align: center;
   font-size: 3.5rem;
-  /* margin-top: 2.5rem;
-  margin-bottom: 1.5rem; */
   margin-left: auto;
   margin-right: auto;
   padding: 4rem 2rem 0rem 2rem;
