@@ -1,18 +1,23 @@
 /* for tablets */
-@media screen and (max-width: 991px){
+
+/* landscape */
+@media screen and (max-width: 1025px){
   /* Banner */
   .banner{
-    height: 30vh;
+    height: 100vh;
     background-position: 50% -300px;
   }
   #banner-content{
-    top: 12%;
+    top: 45%;
   }
   #banner-content div{
+    width: 70%;
     font-size: 3.5rem;
   }
   #banner-content i{
+    width: 20%;
     font-size: 2.5rem;
+    border-radius: 10px;
   }
       
   /* Things I've Done */
@@ -21,27 +26,22 @@
     font-size: 3rem; 
   }
   #subsection{
-    width: 95%;
-  }
-  #subsection img{
-    height: auto; 
-    width: 30%;
+    width: 80%;
   }
 
-  /* Tools in my Tool Box */
-  .row{
-    margin-top: .1rem;
-    margin-bottom: .1rem;
-    width: auto;
-  }
-  .list-element{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 .5rem 0 .5rem;
-    font-size: 1.5rem;
+  #subsection .title img{
+    max-height: 80%;
+    width: 20%;
+    justify-items: end;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
   }
 
+  /* words I live by */
+  #quotes{
+    padding-bottom: 0;
+  }
   /* Contact */
   #connect{
     line-height: 2.5rem;
@@ -66,5 +66,90 @@
   .icon:hover{  
     transform: scale(1);
     color: rgba(0, 191, 255, 0.932);
+  }
+
+
+  /* generaled classes */
+  #opaque-bg{
+    background-color: rgba(240, 248, 255, 0.404);
+    width: 80%;
+    margin: 10vh auto 2vh auto;
+  }
+} 
+
+/* portrait */
+@media screen and (max-width: 791px){
+  /* Banner */
+  .banner{
+    height: 40vh;
+    background-position: 50% -300px;
+  }
+  #banner-content{
+    top: 18%;
+  }
+  #banner-content div{
+    font-size: 3.5rem;
+    width:auto;
+  }
+  #banner-content i{
+    font-size: 2.5rem;
+    width: 25%;
+  }
+      
+  /* Things I've Done */
+  .title{
+    display: flex;
+    font-size: 3rem; 
+  }
+  #subsection{
+    width: 95%;
+  }
+  #subsection .title img{
+    max-height: 80%;
+    width: 30%;
+  }
+
+  .grid-tools .card{
+    width: 100%;
+  }
+
+  .grid-tools img{
+    height: 50%;
+  }
+
+  /* tools */
+  .long{
+    grid-template-rows: 2fr 1fr;
+  }
+  /* Contact */
+  #connect{
+    line-height: 2.5rem;
+    font-size: 20px;
+    padding-top: 3rem;
+  }
+  #connect p{
+    text-align: center;
+    font-size: 2.25rem;
+  }
+  #connect span{
+    display: none;
+  }
+  .larger{
+    font-size: 3rem;
+    font-weight: 550;
+  }
+  .label{
+    font-weight: 550;
+    font-size: 2.5rem;
+    width: 90%;
+  }  
+  .icon:hover{  
+    transform: scale(1);
+    color: rgba(0, 191, 255, 0.932);
+  }
+
+  /* general */
+  #opaque-bg{
+    width: 85%;
   }
 } 
