@@ -84,15 +84,17 @@ html{
 }
 .title a{
   justify-self: start;
+  align-self: end;
 }
 .tags{
   display: inline;
   width: 100%;
+  align-self: start;
 }
 .tag{
   background-color: #4f5956;
   color: rgba(240, 248, 255, 0.804);
-  border-radius: 8%;
+  border-radius: 5px;
   width:fit-content;
   float: left;
   margin: .5rem .5rem 0 .5rem;
@@ -148,8 +150,8 @@ html{
     margin: 0 auto 0 auto;
   }
   .card img{
-    height: 80%;
-    margin: auto;
+    height: 18vh;
+    margin: 0 auto 0 auto;
   }
 
   /* Contact */
@@ -223,7 +225,7 @@ a:hover {
 
 #opaque-bg{
   background-color: rgba(240, 248, 255, 0.404);
-  width: 70%;
+  width: 70vw;
   margin: 10vh auto 2vh auto;
 }
 

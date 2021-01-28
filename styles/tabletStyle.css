@@ -29,12 +29,15 @@
   }
 
   #subsection .title img{
-    max-height: 80%;
-    width: 20%;
+    max-height: 18vh;
+    width: 18vw;
     justify-items: end;
     margin-top: auto;
     margin-bottom: auto;
     object-fit: cover;
+  }
+  .long{
+    grid-template-rows: 1fr 1fr;
   }
 
   /* words I live by */
@@ -108,17 +111,16 @@
     width: 100%;
   }
 
+  .card img {
+    height: 13vw;
+  }
   .grid-tools .card{
     width: 100%;
   }
 
-  .grid-tools img{
-    height: 50%;
-  }
-
   /* tools */
   .long{
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   
   /* Contact */
