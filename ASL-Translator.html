@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>I'm Francis Masangcay</title>
+    <meta name="author" content="Francis Masangcay" />
+    <meta name="description" content="Personal webpage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/mainStyle.css" />
+    <link rel="stylesheet" href="./styles/tabletStyle.css" />
+    <link rel="stylesheet" href="./styles/mobileStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <a href="/">Francis Masangcay</a>
+      <div class="button"><a href="/">Home</a></div>
+    </div>
+    <div id="opaque-bg">
+      <div class="label">
+        <span>&horbar;</span> ASL Translator <span>&horbar;</span>
+      </div>
+      <div class="project-headline">
+        <div>
+          <div class="tag">AI</div>
+          <div class="tag">AWS</div>
+          <div class="tag">Flutter</div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/acm-projects/ASL-Translator"
+            >https://github.com/acm-projects/ASL-Translator</a
+          >
+        </div>
+      </div>
+      <div class="section flex-column">
+        <div class="subsection">
+          <video class="asl-video" controls>
+            <source src="/assets/asl-translator.mp4" type="video/mp4" />
+          </video>
+          <div class="project-desc">
+            <div>
+              <h3>About The Project</h3>
+            </div>
+
+            <p>
+              ASL - Translator is a mobile app that leverages machine learning
+              and image recognition to translate ASL hand signs to plain text.
+              For this project I worked with a team of 4 other peers as a full
+              stack developer.
+            </p>
+            <p>
+              For the frontend application my team and I utilized Flutter for
+              its cross platform capabilities in case of future develpment for
+              iOS support. For the backend of our app, we chose to use AWS
+              Rekognition and the AWS S3 service. Rekognition easily integrated
+              with S3 services for our dataset and not to mention that with AWS
+              services our application is able to scale well horizontally.
+            </p>
+            <p>
+              Difficulties of this project included model accuracy and training
+              data quality. After obtaining varied and good resoltuion images to
+              train our model on the project ended with an average of 85%
+              confidence in practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,34 +1,38 @@
 /* for tablets */
 
 /* landscape */
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1025px) {
   /* Banner */
-  .banner{
+  .banner {
     height: 100vh;
     background-position: 50% -300px;
   }
-  #banner-content{
+  #banner-content {
     top: 45%;
   }
-  #banner-content div{
+  #banner-content div {
     width: 70%;
     font-size: 3.5rem;
   }
-  #banner-content i{
+  #banner-content i {
     width: 20%;
     font-size: 2.5rem;
     border-radius: 10px 10px 0 0;
   }
-      
+
   /* Things I've Done */
-  .title{
-    font-size: 3rem; 
+  .title {
+    font-size: 1.5rem;
   }
-  #subsection{
+  #subsection {
     width: 80%;
   }
 
-  #subsection .title img{
+  .tag {
+    font-size: 0.75rem;
+  }
+
+  #subsection .title img {
     max-height: 18vh;
     width: 18vw;
     justify-items: end;
@@ -36,122 +40,145 @@
     margin-bottom: auto;
     object-fit: cover;
   }
-  .long{
+  .long {
     grid-template-rows: 1fr 1fr;
   }
 
+  /* tools */
+  .grid {
+    column-gap: 0.1rem;
+  }
+
+  .card img {
+    height: 10vh;
+  }
+
   /* words I live by */
-  #quotes{
+  #quotes {
     padding-bottom: 0;
   }
   /* Contact */
-  #connect{
+  #connect {
     line-height: 2.5rem;
     font-size: 20px;
     padding-top: 3rem;
   }
-  #connect p{
+  #connect p {
     text-align: center;
     font-size: 2.25rem;
   }
-  #connect span{
+  #connect span {
     display: none;
   }
-  .larger{
+  .larger {
     font-size: 3rem;
     font-weight: 550;
   }
-  .label{
+  .label {
     font-weight: 550;
     font-size: 2.5rem;
-  }  
-  .icon:hover{  
+  }
+  .icon:hover {
     transform: scale(1);
     color: rgba(0, 191, 255, 0.932);
   }
 
-
   /* generaled classes */
-  #opaque-bg{
+  #opaque-bg {
     background-color: rgba(240, 248, 255, 0.404);
     width: 80%;
     margin: 10vh auto 2vh auto;
   }
-} 
+}
 
 /* portrait */
-@media screen and (max-width: 791px){
+@media screen and (max-width: 791px) {
   /* Banner */
-  .banner{
+  .banner {
     height: 40vh;
     background-position: 50% -300px;
   }
-  #banner-content{
+  #banner-content {
     top: 18%;
   }
-  #banner-content div{
+  #banner-content div {
     font-size: 3.5rem;
-    width:auto;
+    width: auto;
   }
-  #banner-content i{
+  #banner-content i {
     font-size: 2.5rem;
     width: 25%;
   }
-      
+
   /* Things I've Done */
-  .title{
-    font-size: 3rem; 
+  .title {
+    font-size: 1.75rem;
     margin-bottom: 2rem;
   }
-  #subsection{
+  #subsection {
     width: 95%;
   }
-  #subsection .title img{
+  #subsection .title img {
     max-height: 80%;
     width: 100%;
   }
 
   .card img {
-    height: 13vw;
+    height: 10vw;
   }
-  .grid-tools .card{
+  .grid-tools .card {
     width: 100%;
   }
 
   /* tools */
-  .long{
+  .long {
     grid-template-rows: 1fr 1fr;
   }
-  
+
   /* Contact */
-  #connect{
+  #connect {
     line-height: 2.5rem;
     font-size: 20px;
     padding-top: 3rem;
   }
-  #connect p{
+  #connect p {
     text-align: center;
     font-size: 2.25rem;
   }
-  #connect span{
+  #connect span {
     display: none;
   }
-  .larger{
+  .larger {
     font-size: 3rem;
     font-weight: 550;
   }
-  .label{
+  .label {
     font-weight: 550;
     font-size: 2.5rem;
     width: 90%;
-  }  
-  .icon:hover{  
+  }
+  .icon:hover {
     transform: scale(1);
     color: rgba(0, 191, 255, 0.932);
   }
 
   /* general */
-  #opaque-bg{
+  #opaque-bg {
     width: 85%;
   }
-} 
+
+  /* ASL translator */
+  .asl-video {
+    max-height: 25vh;
+  }
+
+  /* trees */
+  #trees-iFrame {
+    max-height: fit-content;
+  }
+
+  /*slitherPy*/
+  .slither-video {
+    max-height: 25vh;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>I'm Francis Masangcay</title>
+    <meta name="author" content="Francis Masangcay" />
+    <meta name="description" content="Personal webpage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/mainStyle.css" />
+    <link rel="stylesheet" href="./styles/tabletStyle.css" />
+    <link rel="stylesheet" href="./styles/mobileStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <a href="/">Francis Masangcay</a>
+      <div class="button"><a href="/">Home</a></div>
+    </div>
+    <div id="opaque-bg">
+      <div class="label">
+        <span>&horbar;</span> RPS
+        <span>&horbar;</span>
+      </div>
+      <div class="project-headline">
+        <div>
+          <div class="tag">React.js</div>
+          <div class="tag">Redux</div>
+          <div class="tag">Socket.io</div>
+          <div class="tag">Node.js</div>
+          <div class="tag">Typescript</div>
+          <div class="tag">Express</div>
+        </div>
+        <div class="project-links">
+          <a href="https://rocks-papers-and-scissors.netlify.app/"
+            >https://rocks-papers-and-scissors.netlify.app/</a
+          >
+          <a href="https://github.com/FrancisMasangcay/RockPaperScissors-server"
+            >Server Repository</a
+          >
+          <a href="https://github.com/FrancisMasangcay/RockPaperScissors-Client"
+            >Client Repository</a
+          >
+        </div>
+      </div>
+      <div class="section flex-column">
+        <div class="subsection">
+          <video class="rps-video" controls>
+            <source src="/assets/RPS.mp4" type="video/mp4"/>
+          </video>
+          <div class="project-desc">
+            <div>
+              <h3>About The Project</h3>
+            </div>
+            <p>
+              RPS uses the socket.io library to implement websockets and provide
+              a realtime multiplayer rock papers scissors experience. Users can
+              create or enter a room using a generated room code and play
+              against each other in private lobbies.
+            </p>
+
+            <div>
+              <h3>Tech Stack Considerations</h3>
+            </div>
+            <p>
+              The biggest concern coming into this project was how to support a
+              multiplayer experience. I knew I would have to use websockets to
+              accomplish this, and there were really 3 routes I could have
+              taken. 
+              <ol>
+                <li>Socket.io</li>
+                <li>Sock.js</li>
+                <li>Firebase Real Time Database (RTD)</li>
+              </ol>
+              <b>Sock.js: </b>A purely websocket implementation and does not have fallbacks in case a client's browser does not support websockets.
+              <span>&nbsp;</span>
+              <b>Firebase RTD: </b>A websocket wrapped cloud database. Means any data handling would have to be done client side. I personally had security and perfomance concerns about doing this. Mainly because all of the game logic and the database itself would be exposed to the public web. Additionally, since the game logic would be part of the client's package, this would cause a larger than needed package and slowed performance. 
+              <span>&nbsp;</span>
+              <b>Socket.io: </b> I chose to go with socket.io because it doesn't require client side processing like Firebase RTD and on top of that, socket.io supports http long polling in case a browser does not support websockets. This meant I had to set up my own express server and host it on Heroku, but the performance and security boons were worth the extra effort.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
