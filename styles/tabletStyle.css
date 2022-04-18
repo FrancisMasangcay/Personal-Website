@@ -1,7 +1,7 @@
 /* for tablets */
 
 /* landscape */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1325px) {
   /* Banner */
   .banner {
     height: 100vh;
